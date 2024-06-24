@@ -4,7 +4,7 @@
 
 <p>Você pode vistiar esse site pelo link: https://eduardowada.github.io/MiAuAuLar/</p>
 
-![Animação](https://github.com/eduardowada/MiAuAuLar/assets/156962925/6ed8e1af-c84d-4256-a0b5-110f47d10f66)
+![Animação](https://github.com/eduardowada/MiAuAuLar/assets/156962925/3f111423-ae82-4b07-a249-58849b741dc2)
 
 
 ## Funcionalidades
@@ -13,6 +13,7 @@
   <li><b>Informações sobre a organização:</b> Conheça nossa missão, visão e os valores que nos guiam no trabalho de resgate e adoção de animais.</li>
   <li><b>Serviço de adoção:</b> Veja a lista de pets disponíveis para adoção, com fotos e informações detalhadas sobre cada um.</li>
   <li><b>Formulário para contato:</b> Interessados podem preencher um formulário para iniciar o processo de adoção.</li>
+  <li><b>Mensagem de formulário enviado:</b> Após o envio do formulário, um evento é acionado e a mensagem é exibida na tela.</li>
 </ul>
 
 ## Tecnologias Utilizadas
