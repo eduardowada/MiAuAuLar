@@ -11,6 +11,7 @@ html {
 
 body {
     font: "Lucida Grande", "Lucida Sans Unicode", Arial, Sans-serif;
+    color: white;
 }
 
 #container {
@@ -209,9 +210,98 @@ section h2 {
     color:rgb(244, 218, 91)
 }
 
+/* Seção Contato */
+
+#contato {
+    margin: 40px 120px 40px 80px;
+    border-radius: 80px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    text-align: justify;
+    border: 5px solid #ECA634;
+    /* padding: 60px 780px 60px 90px; */
+}
+
+form {
+    text-align: center;
+    margin: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+}
+
+form div {
+    margin-bottom: 20px;
+    text-align: left;
+    display: block;
+    width: 60%;
+}
+
+form div {
+    margin-bottom: 20px;
+    text-align: left;
+    display: inline-block;
+    width: 60%;
+  }
+  
+  form label {
+    display: block;
+    margin-bottom: 5px;
+    text-align: left;
+  }
+  
+  input.campo, textarea.campo {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    background-color: #fff;
+    border: none;
+    font-size: 0.8em;
+    border-radius: 10px;
+    padding: 10px;
+    width: 100%;
+  }
+  
+  input.campo {
+    height: 40px;
+  }
+  
+  textarea.campo {
+    height: 80px;
+  }
+  
+  .button {
+    margin: 10px;
+    text-align: center;
+  }
+  
+  button {
+    height: 30px;
+    width: 100px;
+    border: none;
+    font-size: 0.8em;
+    border-radius: 10px;
+    background-color: #312589;
+    color: #ffffff;
+  }
+
+/* Rodapé */
+
+#rodape {
+    padding: 20px 0;
+    background-color: #FFDF00;
+    text-align: center;
+}
+
+footer>p a {
+    padding: 2px 50px;
+    font-size: 20px;
+}
+
+.rodapeColor {
+    color: brown;
+}
+
 /* Media queries para ajustar o layout em telas menores */
 @media (max-width: 600px) {
-    #logo {
+    #logo, #pets, #pet1, #pet2, #pet3 {
         float: none; /* Remove o float do logo */
         text-align: center; /* Centraliza o logo em telas menores */
         margin-bottom: 20px; /* Espaço abaixo do logo em telas menores */
