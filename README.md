@@ -49,7 +49,7 @@ git cd MiAuAuLar
 ---
 ## Requisitos do projeto
 
-<p><b>Objetivo:</b>Desenvolver uma landing page simples utilizando HTML, CSS e JavaScript.</p>
+<p><b>Objetivo:</b> Desenvolver uma landing page simples utilizando HTML, CSS e JavaScript.</p>
 
 ## Conteúdo mínimo da landing page
 
