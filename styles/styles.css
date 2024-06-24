@@ -35,12 +35,10 @@ h3 {
     font-style: normal;
 }
 
-
 #container {
     width: 100%;
     margin: 0 auto;
     background-color: #0B9A9C;
-
 }
 
 a:link,
@@ -55,11 +53,9 @@ a:hover {
 }
 
 /* Estilos para logo e menu */
-
-
 #logo h1 {
     float: left;
-    margin-left: 120px;
+    margin-left: 40px;
     margin-right: 120px;
 }
 
@@ -95,7 +91,7 @@ nav ul li {
 
 nav ul li a {
     display: block;
-    padding: 45px 90px;
+    padding: 45px 78px;
     /* Ajuste o padding para um visual mais confortável */
     font-size: 30px;
     /* Tamanho da fonte para telas maiores */
@@ -105,13 +101,12 @@ nav ul li a {
 }
 
 /* Principal */
-
 section {
     background-color: #0B9A9C;
     border-top: 10px solid #ECA634;
     border-bottom: 10px solid #ECA634;
     overflow: hidden;
-    padding: 20px 50px 20px 50px;
+    padding: 20px 50px;
 }
 
 section h2 {
@@ -150,8 +145,7 @@ section h2 {
     border-radius: 200px;
 }
 
-/* Pets para adoção*/
-
+/* Pets para adoção */
 .pets titulo {
     text-align: center;
 }
@@ -222,6 +216,10 @@ section h2 {
     border-radius: 200px;
 }
 
+#pets h3 {
+    color:#ECA634
+}
+
 /* Seção sobre */
 #sobre {
     margin: 40px 110px 40px 80px;
@@ -229,7 +227,6 @@ section h2 {
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     text-align: justify;
     border: 5px solid #ECA634;
-    /* padding: 60px 780px 60px 90px; */
 }
 
 .titulo {
@@ -239,18 +236,16 @@ section h2 {
 }
 
 .subtitulo {
-    color: rgb(244, 218, 91)
+    color: rgb(244, 218, 91);
 }
 
 /* Seção Contato */
-
 #contato {
     margin: 40px 120px 40px 80px;
     border-radius: 80px;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     text-align: justify;
     border: 5px solid #ECA634;
-    /* padding: 60px 780px 60px 90px; */
 }
 
 form {
@@ -318,17 +313,14 @@ button {
 #mensagem-sucesso {
     text-align: center;
     color: #FFDF00;
-    /* Cor do h2 */
     font-size: 24px;
     font-weight: bold;
     margin-top: 20px;
     display: none;
-    /* Inicialmente oculta */
     width: 100%;
 }
 
 /* Rodapé */
-
 #rodape {
     padding: 20px 0;
     background-color: #FFDF00;
@@ -345,32 +337,84 @@ footer>p a {
 }
 
 /* Media queries para ajustar o layout em telas menores */
-@media (max-width: 600px) {
-
-    #logo,
-    #pets,
-    #pet1,
-    #pet2,
-    #pet3 {
-        float: none;
-        /* Remove o float do logo */
-        text-align: center;
-        /* Centraliza o logo em telas menores */
-        margin-bottom: 20px;
-        /* Espaço abaixo do logo em telas menores */
+@media (max-width: 1024px) {
+    #inicio, #pets, #sobre, #contato {
+        margin: 20px 50px;
+        padding: 20px;
     }
 
-    nav {
-        float: none;
-        /* Remove o float do menu */
+    .descricao {
+        padding: 30px;
+    }
+
+    #img_inicio {
+        margin-top: -200px;
+        margin-right: -300px;
+    }
+
+    #pet1, #pet2, #pet3 {
+        margin-top: -150px;
+        margin-right: -300px;
+    }
+}
+
+@media (max-width: 768px) {
+    nav ul {
         text-align: center;
-        /* Centraliza o menu em telas menores */
     }
 
     nav ul li {
+        float: none;
+        display: inline-block;
+    }
+
+    nav ul li a {
+        padding: 20px;
+        font-size: 18px;
+    }
+
+    #logo h1 {
+        float: none;
+        text-align: center;
+        margin: 0;
+    }
+
+    #logo a {
+        display: inline-block;
+        margin: 0 auto;
+    }
+
+    section {
+        padding: 10px;
+    }
+
+    #img_inicio, #pet1, #pet2, #pet3 {
+        float: none;
+        margin: 20px auto;
         display: block;
-        /* Mostra cada item de menu em uma linha */
-        margin: 10px 0;
-        /* Espaçamento entre os itens do menu */
+    }
+
+    #img_inicio a, #pet1 a, #pet2 a, #pet3 a {
+        width: 100%;
+        height: auto;
+    }
+
+    .descricao {
+        padding: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    nav ul li a {
+        padding: 10px;
+        font-size: 16px;
+    }
+
+    section h2 {
+        font-size: 24px;
+    }
+
+    p, h2, h3 {
+        font-size: 14px;
     }
 }
