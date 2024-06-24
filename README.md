@@ -35,7 +35,7 @@ git clone https://github.com/eduardowada/MiAuAuLar.git
 <p>2. Navegue até o diretório do projeto: </p>
 
 ```
-git cd MiAuAuLar.git
+git cd MiAuAuLar
 ```
 
 ## Contribuição
