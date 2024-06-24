@@ -282,6 +282,16 @@ form div {
     color: #ffffff;
   }
 
+  #mensagem-sucesso {
+    text-align: center;
+    color: #FFDF00; /* Cor do h2 */
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 20px;
+    display: none; /* Inicialmente oculta */
+    width: 100%;
+}
+
 /* Rodapé */
 
 #rodape {
