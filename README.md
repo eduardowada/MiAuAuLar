@@ -51,7 +51,7 @@ git cd MiAuAuLar
 
 <p><b>Objetivo:</b>Desenvolver uma landing page simples utilizando HTML, CSS e JavaScript.</p>
 
-##Conteúdo mínimo da landing page
+## Conteúdo mínimo da landing page
 
 - Configure um repositório Git para o projeto.
 - Crie duas branches: uma principal (main) e outra de desenvolvimento (develop).
