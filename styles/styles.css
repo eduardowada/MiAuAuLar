@@ -1,420 +1,195 @@
-/* Estrutura padrão do site */
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
+
+/* Configurações globais */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  font-family: Helvetica, sans-serif;
 }
 
-html {
-    scroll-behavior: smooth;
+main {
+  background-color: #0B9A9C;
 }
 
-body {
-    font: "Lucida Grande", "Lucida Sans Unicode", Arial, Sans-serif;
-    color: white;
-}
+/* .border-custom {
+  border-radius: 80px;
+  border: 5px solid #ECA634;
+} */
 
-p, h2 {
-    font-family: "Handlee", "Handlee regular", Arial, Helvetica, sans-serif;
-    font-size: 18px;
-}
-
-h3 {
-    font-family: "Satisfy", "Satisfy regular", Arial, Helvetica, sans-serif;
-}
-
+/* Configurações de fontes*/
 .satisfy-regular {
-    font-family: "Satisfy", cursive;
-    font-weight: 400;
-    font-style: normal;
+  font-family: "Satisfy", cursive;
+  font-weight: 400;
+  font-style: normal;
 }
 
 .handlee-regular {
-    font-family: "Handlee", cursive;
-    font-weight: 400;
-    font-style: normal;
+  font-family: "Handlee", cursive;
+  font-weight: 400;
+  font-style: normal;
 }
 
-#container {
-    width: 100%;
-    margin: 0 auto;
-    background-color: #0B9A9C;
+/* Configurações da Navbar*/
+.navbar-custom {
+  background-color: #FFDF00;
 }
 
-a:link,
-a:active,
-a:visited {
-    color: #0B9A9C;
-    text-decoration: none;
+.navbar-brand img {
+  height: auto;
+  width: 7rem;
 }
 
-a:hover {
-    color: #ffffff;
+
+.custom-nav .nav-item {
+  margin-right: 7em;
 }
 
-/* Estilos para logo e menu */
-#logo h1 {
-    float: left;
-    margin-left: 40px;
-    margin-right: 120px;
+.custom-nav .nav-item:last-child {
+  margin-right: 50px;
+  /* remove a margem direita do último item */
 }
 
-#logo a {
-    width: 150px;
-    height: 80px;
-    display: block;
-    text-indent: -9999px;
-    text-decoration: none;
-    background: url(../img/logo2.png) no-repeat center center;
-    background-size: contain;
+.nav-item a {
+  font-family: "Satisfy", "Satisfy regular", Arial, Helvetica, sans-serif;
+  color: #0B9A9C;
+  font-size: 23px;
 }
 
-#logo a:hover {
-    transform: scale(1.1);
+/* Secção welcome */
+.welcome {
+  height: 140vh;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  background-color: #0B9A9C;
 }
 
-header {
-    background-color: #FFDF00;
-    color: #0B9A9C;
-    overflow: hidden;
+.welcome h1 {
+  text-align: center;
+  color: #FFDF00;
+  font-family: 'Archivo Black', sans-serif;
 }
 
-nav ul {
-    list-style-type: none;
+.welcome p {
+  text-align: justify;
+  font-family: "Handlee", "Handlee regular", Arial, Helvetica, sans-serif;
+  font-size: 18px;
 }
 
-nav ul li {
-    float: left;
-    margin: 35 10px;
-    /* Espaçamento entre os itens do menu */
+#welcome-img {
+  width: 500px;
+  height: 455px;
+  ;
 }
 
-nav ul li a {
-    display: block;
-    padding: 45px 78px;
-    /* Ajuste o padding para um visual mais confortável */
-    font-size: 30px;
-    /* Tamanho da fonte para telas maiores */
-    text-decoration: none;
-    font-family: "Satisfy", "Satisfy regular", Arial, Helvetica, sans-serif;
-    color: #0B9A9C;
+
+/* Secção pets */
+.pets {
+  height: 100vh;
+  background-color: #0B9A9C;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  perspective: 1000px;
+  background-attachment: fixed;
 }
 
-/* Principal */
-section {
-    background-color: #0B9A9C;
-    border-top: 10px solid #ECA634;
-    border-bottom: 10px solid #ECA634;
-    overflow: hidden;
-    padding: 20px 50px;
+.pets-title {
+  text-align: center;
 }
 
-section h2 {
-    font-size: 35px;
-    color: #FFDF00;
-    text-align: center;
+.pets h2 {
+  text-align: center;
+  color: #FFDF00;
+  font-family: 'Archivo Black', sans-serif;
 }
 
-#conteudo {
-    border-top: 5px solid #8a0b8a;
-    border-bottom: 5px solid #8a0b8a;
+.pets h3 {
+  color: #ECA634;
+  font-family: "Satisfy", "Satisfy regular", Arial, Helvetica, sans-serif;
 }
 
-#inicio {
-    margin: 40px 110px 40px 80px;
-    border-radius: 80px;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-    text-align: justify;
-    border: 5px solid #ECA634;
+.pets p {
+  font-family: "Handlee", "Handlee regular", Arial, Helvetica, sans-serif;
+  font-size: 18px;
 }
 
-#img_inicio {
-    float: right;
-    margin-top: -400px;
-    margin-right: -570px;
+#newpet1 {
+  width: 300px;
+  height: 300px;
+  border-radius: 200px;
 }
 
-#img_inicio a {
-    width: 500px;
-    height: 380px;
-    text-indent: -9999px;
-    text-decoration: none;
-    display: block;
-    background: url(../img/pets.webp) no-repeat center center;
-    background-size: contain;
-    border-radius: 200px;
+.btn-custom {
+  background-color: #9227c3 !important;
+  color: #fff !important;
+  opacity: 0.8;
 }
 
-/* Pets para adoção */
-.pets titulo {
-    text-align: center;
+.btn-custom:hover {
+  background-color: #9227c3;
+  color: #fff;
+  opacity: 1;
 }
 
-#pets {
-    margin: 40px 120px 40px 80px;
-    border-radius: 80px;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-    text-align: justify;
-    border: 5px solid #ECA634;
+/*  Secção about */
+
+.about {
+  height: 200vh;
+  background-color: #0B9A9C;
 }
 
-.descricao {
-    border-radius: 80px;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-    text-align: justify;
-    padding: 60px 600px 60px 50px;
+.about-title {
+  text-align: center;
+  color: #FFDF00;
+  font-family: 'Archivo Black', sans-serif;
 }
 
-#pet1 {
-    float: right;
-    margin-top: -220px;
-    margin-right: -550px;
+.about p {
+  font-family: "Handlee", "Handlee regular", Arial, Helvetica, sans-serif;
+  font-size: 18px;
 }
 
-#pet1 a {
-    width: 400px;
-    height: 350px;
-    text-indent: -9999px;
-    text-decoration: none;
-    display: block;
-    background: url(../img/pet1.webp) no-repeat center center;
-    background-size: contain;
-    border-radius: 200px;
+.subtitle {
+  text-align: center;
+  color: #FFDF00;
+  font-family: "Handlee", "Handlee regular", Arial, Helvetica, sans-serif;
 }
 
-#pet2 {
-    float: right;
-    margin-top: -245px;
-    margin-right: -550px;
+/* Footer */
+
+footer {
+  background-color: #FFDF00
 }
 
-#pet2 a {
-    width: 400px;
-    height: 350px;
-    text-indent: -9999px;
-    text-decoration: none;
-    display: block;
-    background: url(../img/pet2.jpg) no-repeat center center;
-    background-size: contain;
-    border-radius: 200px;
+footer h6 {
+  font-family: "Satisfy", "Satisfy regular", Arial, Helvetica, sans-serif;
+  color: #0B9A9C;
+  font-size: 23px;
 }
 
-#pet3 {
-    float: right;
-    margin-top: -350px;
-    margin-right: -545px;
-}
-
-#pet3 a {
-    width: 400px;
-    height: 350px;
-    text-indent: -9999px;
-    text-decoration: none;
-    display: block;
-    background: url(../img/pet3.webp) no-repeat center center;
-    background-size: contain;
-    border-radius: 200px;
-}
-
-#pets h3 {
-    color:#ECA634
-}
-
-/* Seção sobre */
-#sobre {
-    margin: 40px 110px 40px 80px;
-    border-radius: 80px;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-    text-align: justify;
-    border: 5px solid #ECA634;
-}
-
-.titulo {
-    text-align: center;
-    color: rgb(244, 218, 91);
-    font-size: 25px;
-}
-
-.subtitulo {
-    color: rgb(244, 218, 91);
-}
-
-/* Seção Contato */
-#contato {
-    margin: 40px 120px 40px 80px;
-    border-radius: 80px;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-    text-align: justify;
-    border: 5px solid #ECA634;
-}
-
-form {
-    text-align: center;
-    margin: 20px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 18px;
-}
-
-form div {
-    margin-bottom: 20px;
-    text-align: left;
-    display: block;
-    width: 60%;
-}
-
-form div {
-    margin-bottom: 20px;
-    text-align: left;
-    display: inline-block;
-    width: 60%;
-}
-
-form label {
-    display: block;
-    margin-bottom: 5px;
-    text-align: left;
-}
-
-input.campo,
-textarea.campo {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 1em;
-    background-color: #fff;
-    border: none;
-    font-size: 0.8em;
-    border-radius: 10px;
-    padding: 10px;
-    width: 100%;
-}
-
-input.campo {
-    height: 40px;
-}
-
-textarea.campo {
-    height: 80px;
-}
-
-.button {
-    margin: 10px;
-    text-align: center;
-}
-
-button {
-    height: 30px;
-    width: 100px;
-    border: none;
-    font-size: 0.8em;
-    border-radius: 10px;
-    background-color: #312589;
-    color: #ffffff;
-}
-
-#mensagem-sucesso {
-    text-align: center;
-    color: #FFDF00;
-    font-size: 24px;
-    font-weight: bold;
-    margin-top: 20px;
-    display: none;
-    width: 100%;
-}
-
-/* Rodapé */
-#rodape {
-    padding: 20px 0;
-    background-color: #FFDF00;
-    text-align: center;
-}
-
-footer>p a {
-    padding: 2px 50px;
-    font-size: 20px;
-}
-
-.rodapeColor {
-    color: brown;
-}
-
-/* Media queries para ajustar o layout em telas menores */
-@media (max-width: 1024px) {
-    #inicio, #pets, #sobre, #contato {
-        margin: 20px 50px;
-        padding: 20px;
-    }
-
-    .descricao {
-        padding: 30px;
-    }
-
-    #img_inicio {
-        margin-top: -200px;
-        margin-right: -300px;
-    }
-
-    #pet1, #pet2, #pet3 {
-        margin-top: -150px;
-        margin-right: -300px;
-    }
+@media (max-width: 1200px) {
+  img {
+    width: 40%;
+    height: 40%;
+  }
 }
 
 @media (max-width: 768px) {
-    nav ul {
-        text-align: center;
-    }
-
-    nav ul li {
-        float: none;
-        display: inline-block;
-    }
-
-    nav ul li a {
-        padding: 20px;
-        font-size: 18px;
-    }
-
-    #logo h1 {
-        float: none;
-        text-align: center;
-        margin: 0;
-    }
-
-    #logo a {
-        display: inline-block;
-        margin: 0 auto;
-    }
-
-    section {
-        padding: 10px;
-    }
-
-    #img_inicio, #pet1, #pet2, #pet3 {
-        float: none;
-        margin: 20px auto;
-        display: block;
-    }
-
-    #img_inicio a, #pet1 a, #pet2 a, #pet3 a {
-        width: 100%;
-        height: auto;
-    }
-
-    .descricao {
-        padding: 20px;
-    }
+  img {
+    width: 50%;
+    height: 20%;
+  }
 }
 
-@media (max-width: 480px) {
-    nav ul li a {
-        padding: 10px;
-        font-size: 16px;
-    }
-
-    section h2 {
-        font-size: 24px;
-    }
-
-    p, h2, h3 {
-        font-size: 14px;
-    }
+@media (max-width: 576px) {
+  img {
+    width: 50%;
+    height: 20%;
+  }
 }
