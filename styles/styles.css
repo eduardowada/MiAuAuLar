@@ -33,6 +33,7 @@ main {
   justify-content: space-between;
   align-items: center;
   padding: 1rem;
+  min-height: 6rem; /* Define a altura mínima do navbar */
 }
 
 .navbar-brand img {
@@ -64,6 +65,14 @@ main {
   padding: 2rem;
 }
 
+.welcome-title {
+  position: relative;
+  width: 100%;
+  text-align: center; 
+  z-index: 1;
+  padding-top: 10rem; /* Define um espaçamento superior no elemento para que o título fique abaixo do navbar */
+}
+
 .welcome .row {
   display: flex;
   flex-direction: column; /* Organiza o conteúdo verticalmente */
@@ -88,7 +97,7 @@ main {
 }
 
 #welcome-img {
-  width: 100%;
+  width: 80%;
   height: auto;
 }
 
@@ -127,7 +136,7 @@ main {
 }
 
 #newpet1 {
-  width: 90%; /* Ajusta a largura da imagem dos pets */
+  width: 70%; /* Ajusta a largura da imagem dos pets */
   height: auto;
   border-radius: 200px;
 }
@@ -195,8 +204,15 @@ footer h6 {
   background-color: #0B9A9C;
 }
 
+.contact h2 {
+  color: #FFDF00;
+}
 /* Media Queries */
 @media (max-width: 768px) {
+  .navbar-custom {
+    min-height: 8rem; /* Ajuste a altura mínima para telas menores */
+  }
+  
   .navbar-custom .nav-link {
     font-size: 16px;
   }
@@ -205,12 +221,24 @@ footer h6 {
     flex-direction: column-reverse; /* Inverte a ordem do texto e da imagem */
   }
 
+  .welcome .col-md-6 {
+    flex-direction: column; /* Define a direção do flexbox como coluna para as colunas */
+  }
+
   .welcome h1 {
     font-size: 2rem;
   }
 
   .welcome p {
     font-size: 1rem;
+  }
+
+  .welcome {
+    padding-top: 4rem; /* Ajuste o padding-top para telas menores */
+  }
+
+  .pets .carousel-inner { /* Ajusta o carousel para telas menores */
+    flex-direction: column; /* Define a direção do flexbox como coluna para o carousel */
   }
 
   .pets h2 {
@@ -225,8 +253,13 @@ footer h6 {
     font-size: 1rem;
   }
 
-  #newpet1 {
+  #welcome-img {
     width: 80%;
+    height: auto;
+  }
+
+  .about .subtitle {
+    text-align: center; /* Ajusta o texto para telas menores */
   }
 
   .about h2 {
@@ -241,6 +274,10 @@ footer h6 {
     font-size: 1rem;
   }
 
+  .contact .col-lg-6 {
+    flex-direction: column; /* Define a direção do flexbox como coluna para a coluna de formulário */
+  }
+
   .contact form {
     width: 100%;
   }
@@ -249,6 +286,7 @@ footer h6 {
     flex-direction: column;
   }
 }
+
 
 @media (min-width: 768px) {
   .welcome .row {
@@ -265,5 +303,74 @@ footer h6 {
 
   .social-icons {
     flex-direction: row; /* Define a ordem normal dos ícones */
+  }
+}
+
+/* Estilos para telas menores que 480px */
+@media (max-width: 480px) {
+  .welcome h1 {
+    font-size: 1.5rem;
+  }
+
+  .welcome p {
+    font-size: 0.8rem; /* Reduz o tamanho da fonte dos parágrafos */
+  }
+
+  #welcome-img {
+    width: 90%; /* Aumenta a largura da imagem para telas muito pequenas */
+    height: auto;
+  }
+
+  .pets h2 {
+    font-size: 1.5rem; /* Reduz o tamanho da fonte do título da seção pets */
+  }
+
+  .pets h3 {
+    font-size: 1rem; /* Reduz o tamanho da fonte do título dos pets */
+  }
+
+  .pets p {
+    font-size: 0.8rem; /* Reduz o tamanho da fonte dos parágrafos da seção pets */
+  }
+
+  .newpet {
+    width: 80%; /* Ajusta a largura da imagem dos pets para telas muito pequenas */
+    height: auto;
+  }
+
+  .about h2 {
+    font-size: 1.5rem; /* Reduz o tamanho da fonte do título da seção about */
+  }
+
+  .about h3 {
+    font-size: 1rem; /* Reduz o tamanho da fonte dos subtítulos da seção about */
+  }
+
+  .about p {
+    font-size: 0.8rem; /* Reduz o tamanho da fonte dos parágrafos da seção about */
+  }
+
+  .contact h2 {
+    font-size: 1.5rem; /* Reduz o tamanho da fonte do título da seção contact */
+  }
+
+  .contact p {
+    font-size: 0.8rem; /* Reduz o tamanho da fonte dos parágrafos da seção contact */
+  }
+
+  footer h6 {
+    font-size: 1.5rem; /* Reduz o tamanho da fonte do título do footer */
+  }
+
+  .social-icons a {
+    font-size: 1.2rem; /* Reduz o tamanho da fonte dos ícones do footer */
+  }
+
+  .custom-nav .nav-item {
+    margin-right: 1em; /* Ajuste o espaçamento entre os itens do menu */
+  }
+
+  .nav-item a {
+    font-size: 1.5rem; /* Reduz o tamanho da fonte dos itens do menu */
   }
 }
